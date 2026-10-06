@@ -1,0 +1,11 @@
+.git
+.gitignore
+.idea
+*.iml
+.vscode
+.mvn
+mvnw
+mvnw.cmd
+target/*
+!target/production-api-0.0.1-SNAPSHOT.jar
+README.md

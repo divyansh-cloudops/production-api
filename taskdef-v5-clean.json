@@ -1,0 +1,59 @@
+{
+  "family": "production-api-task",
+  "taskRoleArn": "arn:aws:iam::351235967322:role/production-api-ecs-task-role",
+  "executionRoleArn": "arn:aws:iam::351235967322:role/ecsTaskExecutionRole",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "1024",
+  "memory": "3072",
+  "containerDefinitions": [
+    {
+      "name": "production-api",
+      "image": "351235967322.dkr.ecr.ap-south-1.amazonaws.com/production-api:v5",
+      "cpu": 512,
+      "memory": 1024,
+      "memoryReservation": 1024,
+      "portMappings": [
+        {
+          "containerPort": 8081,
+          "hostPort": 8081,
+          "protocol": "tcp",
+          "name": "production-api-8081-tcp",
+          "appProtocol": "http"
+        }
+      ],
+      "essential": true,
+      "environment": [
+        {
+          "name": "DB_NAME",
+          "value": "postgres"
+        },
+        {
+          "name": "DB_USERNAME",
+          "value": "postgres"
+        },
+        {
+          "name": "DB_HOST",
+          "value": "database-1.cluster-c3a0u6gekj8k.ap-south-1.rds.amazonaws.com"
+        },
+        {
+          "name": "DB_PORT",
+          "value": "5432"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/production-api-task",
+          "awslogs-create-group": "true",
+          "awslogs-region": "ap-south-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ],
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  }
+}
