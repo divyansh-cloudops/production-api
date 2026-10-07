@@ -43,3 +43,6 @@ build/
 .env
 .env.*
 !.env.example
+
+### Local configuration ###
+application-local.properties
