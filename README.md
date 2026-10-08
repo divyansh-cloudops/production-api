@@ -183,45 +183,34 @@ Expected response:
 ## 📸 Project Screenshots
 
 ### ☁️ ECS Production Deployment
-
-![ECS Production Deployment](screenshots/01-ECS-Production-Deployment.png)
+![ECS Production Deployment](./screenshots/01-ECS-Production-Deployment.png)
 
 ### ⚙️ ECS Fargate Task
-
-![ECS Fargate Task](screenshots/02-ECS-Fargate-Task-Details.png)
+![ECS Fargate Task](./screenshots/02-ECS-Fargate-Task-Details.png)
 
 ### 📦 Amazon ECR Docker Image
-
-![Amazon ECR](screenshots/03-ECR-Docker-Image.png)
+![Amazon ECR Docker Image](./screenshots/03-ECR-Docker-Image.png)
 
 ### 🗄️ Aurora PostgreSQL Database
-
-![Aurora PostgreSQL](screenshots/04-Aurora-PostgreSQL-Database.png)
+![Aurora PostgreSQL Database](./screenshots/04-Aurora-PostgreSQL-Database.png)
 
 ### 🔄 GitHub Actions CI/CD
-
-![GitHub Actions](screenshots/05-GitHub-Actions-CICD-Success.png)
+![GitHub Actions CI/CD](./screenshots/05-GitHub-Actions-CICD-Success.png)
 
 ### 🔐 AWS Secrets Manager
+![AWS Secrets Manager](./screenshots/06-AWS-Secrets-Manager.png)
 
-![AWS Secrets Manager](screenshots/06-AWS-Secrets-Manager.png)
+### 🧪 Postman - Create Product
+![Postman Create Product](./screenshots/07-Postman-POST-Create-Product.png)
 
-### 🧪 Postman – Create Product
+### 🔎 Postman - Get Products
+![Postman Get Products](./screenshots/08-Postman-GET-Products.png)
 
-![Postman POST](screenshots/07-Postman-POST-Create-Product.png)
+### ✏️ Postman - Update Product
+![Postman Update Product](./screenshots/10-Postman-PUT-Update-Product.png)
 
-### 🔎 Postman – Get Products
-
-![Postman GET](screenshots/08-Postman-GET-Products.png)
-
-### ✏️ Postman – Update Product
-
-![Postman PUT](screenshots/10-Postman-PUT-Update-Product.png)
-
-### 🗑️ Postman – Delete Product
-
-![Postman DELETE](screenshots/11-Postman-DELETE-Product.png)
-
+### 🗑️ Postman - Delete Product
+![Postman Delete Product](./screenshots/11-Postman-DELETE-Product.png)
 ---
 
 ## 📊 Project Highlights
